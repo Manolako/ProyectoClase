@@ -1,0 +1,65 @@
+//Propiedades
+    String nombre;
+    String apellidos;
+    int edad;
+    int altura; //En cm
+    double peso; //en Kg
+    String dni;
+    boolean mayorDeEdad;
+
+    public void cumplirAnyos() {
+        //Incrementamos la edad
+        edad++;
+        //Actualizamos si es mayor de edad
+        mayorDeEdad = (edad >= 18);
+    }
+
+    public String nombreCompleto() {
+        return nombre + " " + apellidos;
+    }
+
+    public String felicitar() {
+        return "Feliz cumpleaños " + nombre + " " + apellidos;
+    }
+
+    public String saludar() {
+        return "Buenas " + nombre + " " + apellidos;
+    }
+
+    public Persona (String nombre, String apellidos, int edad, int altura, double peso, String dni) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.altura = altura;
+        this.peso = peso;
+        this.dni = dni;
+        this.mayorDeEdad = (edad >= 18);
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public boolean getMayorDeEdad() {
+        return mayorDeEdad;
+    }
