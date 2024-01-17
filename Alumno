@@ -1,0 +1,22 @@
+public class Alumno extends Persona {
+    // Propiedades adicionales específicas de Alumno
+    String numeroMatricula;
+    String curso;
+
+    // Constructor de la clase Alumno que llama al constructor de la clase Persona
+    public Alumno(String nombre, String apellidos, int edad, int altura, double peso, String dni, String numeroMatricula, String curso) {
+        super(nombre, apellidos, edad, altura, peso, dni);
+        this.numeroMatricula = numeroMatricula;
+        this.curso = curso;
+    }
+
+    // Métodos específicos de Alumno
+
+    public String getNumeroMatricula() {
+        return numeroMatricula;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+}
