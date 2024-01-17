@@ -1,4 +1,4 @@
 # ProyectoClase
 Manuel Navarro
-Felipe Martinez
+Felipe Jimenez
 Antonio Sillero
